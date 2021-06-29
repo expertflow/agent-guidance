@@ -1,0 +1,52 @@
+$blue-background : #25AFCB;
+.container-fluid{
+  background: #f0f0f0;
+  height: 100%;
+  padding: 10px;
+}
+.main-guidance-area{
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.main-guidance{
+
+  .guidance-header{
+    background: $blue-background;
+    margin-bottom: 10px;
+    padding: 0 ;
+    height: 45px;
+    h3{
+      font-size: 18px;
+      color: #fff;
+      margin: 0;
+      line-height: 45px;
+      padding: 0 15px;
+    }
+  }
+}
+
+.guidance-content{
+  padding: 10px 15px;
+
+  mat-form-field{
+    width: 100%;
+
+    mat-icon{
+      color: #BBBFC5;
+      position: relative;
+      top: 3px;
+
+    }
+  }
+}
+
+  .panel-main-content {
+    font-size: 13px;
+    color: #3e3e3e;
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+  }

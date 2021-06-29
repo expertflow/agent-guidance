@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light'), local('Roboto-light'),
+  url('./assets/fonts/roboto/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+  url('./assets/fonts/roboto/Roboto-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('./assets/fonts/roboto/Roboto-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('./assets/fonts/roboto/Roboto-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+html,body{
+  height: 100%;
+  font-family: "Roboto", sans-serif, "Segoe UI", "Segoe UI Emoji", "Apple Color Emoji";
+  background: transparent !important;
+  font-weight: normal;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 10px 0 10px 0;
+  border-top-width: 5px;
+}
+
+.mat-form-field-outline {
+  background: #f8f7f7;
+  border-radius: 3px;
+}
+mat-expansion-panel{
+  margin: 5px 0 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+
+  &:first-child{
+    margin-top: 0 !important;
+  }
+  &.mat-expanded{
+    .mat-expansion-panel-header{
+      background: #F7F7F7 !important;
+      border-radius: 4px 4px 0 0;
+    }
+  }
+
+  .mat-expansion-panel-header{
+    padding: 0 15px;
+  }
+  .mat-expansion-panel-body {
+    padding: 15px;
+  }
+}
+.mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+  color: #919191;
+  top: -3px;
+  position: relative;
+}
+.mat-expansion-panel-header-title {
+  color: #3E3E3E;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.mat-expansion-panel-spacing {
+  margin: 0;
+}

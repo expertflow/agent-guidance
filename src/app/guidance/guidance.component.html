@@ -1,0 +1,83 @@
+<div class="container-fluid">
+  <div class="main-guidance-area">
+  <div class="main-guidance row">
+    <div class="guidance-header col-12">
+      <h3>Agent Guidance</h3>
+    </div>
+    <div class="guidance-content col-12">
+      <div class="guidance-dearch">
+        <mat-form-field appearance="outline">
+          <input matInput (keyup.enter)="searchQuery()" [(ngModel)]="message" placeholder="Have a question? Ask here.">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+      </div>
+
+
+      <mat-accordion *ngIf="displayOptions">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
+            <mat-panel-title>
+              How to login to my URA Web Portal Account?
+            </mat-panel-title>
+
+          </mat-expansion-panel-header>
+          <div class="panel-main-content">
+            <p>Follow these steps to login</p>
+            <ul>
+              <li>1. Visit URA portal</li>
+              <li>2. Click on the Login area on the top right corner</li>
+              <li>3. Enter username (TIN) and password</li>
+            </ul>
+            <p>NB. If you are logging in for the very first time, you will enter the system default password which was sent to your registered email when your TIN application was approved. There after you will be required to
+              create your personal password.</p>
+            <p>For further assistance, please contact us on 0800117000/0800217000 (toll free)</p>
+
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
+            <mat-panel-title>
+              How to login to my Administration portal?
+            </mat-panel-title>
+
+          </mat-expansion-panel-header>
+          <div class="panel-main-content">
+            <p>Follow these steps to login</p>
+            <ul>
+              <li>1. Visit URA portal</li>
+              <li>2. Click on the Login area on the top right corner</li>
+              <li>3. Enter username (TIN) and password</li>
+            </ul>
+            <p>NB. If you are logging in for the very first time, you will enter the system default password which was sent to your registered email when your TIN application was approved. There after you will be required to
+              create your personal password.</p>
+            <p>For further assistance, please contact us on 0800117000/0800217000 (toll free)</p>
+
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
+            <mat-panel-title>
+              How to login my to another account?
+            </mat-panel-title>
+
+          </mat-expansion-panel-header>
+          <div class="panel-main-content">
+            <p>Follow these steps to login</p>
+            <ul>
+              <li>1. Visit URA portal</li>
+              <li>2. Click on the Login area on the top right corner</li>
+              <li>3. Enter username (TIN) and password</li>
+            </ul>
+            <p>NB. If you are logging in for the very first time, you will enter the system default password which was sent to your registered email when your TIN application was approved. There after you will be required to
+              create your personal password.</p>
+            <p>For further assistance, please contact us on 0800117000/0800217000 (toll free)</p>
+
+          </div>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+    </div>
+  </div>
+</div>
+</div>
