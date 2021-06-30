@@ -73,6 +73,12 @@ html,body{
 .mat-form-field-appearance-outline .mat-form-field-infix {
   padding: 10px 0 10px 0;
   border-top-width: 5px;
+
+  input {
+    color: #3e3e3e;
+    font-size: 13px;
+    font-weight: normal;
+  }
 }
 
 .mat-form-field-outline {
@@ -110,7 +116,7 @@ mat-expansion-panel{
 .mat-expansion-panel-header-title {
   color: #3E3E3E;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .mat-expansion-panel-spacing {
